@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soft Landing</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+    <div class="navcontainer">
+
+        <div class="logo">
+            <h2>Soft Landing</h2>
+        </div>
+
+        <!-- Hamburger -->
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+
+        <nav id="navmenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Price</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="button">
+            <button>Login / Sign In</button>
+        </div>
+
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="herosection">
+    <div class="herocontent">
+        <p>professional landing page</p>
+        <h1>WE HELP YOU MANAGE YOUR</h1>
+        <h1>WEBSITE SUCCESSFULLY</h1>
+    </div>
+
+    <div class="input">
+        <input type="text" placeholder="Enter your email">
+    </div>
+</section>
+
+<!-- ================= FEATURES ================= -->
+<div class="a2">
+    <div class="content2">
+        <h1>What You Get</h1>
+        <span>responsive</span>
+        <span>mobile</span>
+        <span>support</span>
+
+        <h2>Minimal Design</h2>
+        <p>
+            Minimal design is a style that focuses on simplicity and clarity.<br>
+            It uses limited colors, clean layouts, and only essential elements.<br>
+            The goal is to remove clutter and highlight what truly matters.
+        </p>
+
+        <h2>Easy to Use</h2>
+        <strong>
+            It is very simple to use because I made this,<br>
+            that's why I am saying.
+        </strong>
+    </div>
+
+    <div class="img2">
+        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=600&auto=format&fit=crop&q=60" alt="">
+    </div>
+</div>
+
+<!-- ================= TEAM ================= -->
+<div class="cardcontent">
+    <h1>Professional Team For You</h1>
+
+    <div class="cardcontainer">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" class="card-img-top">
+            <div class="card-body">
+                <h5>John Doe</h5>
+                <p>UI/UX Designer</p>
+                <a href="#">View Profile</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" class="card-img-top">
+            <div class="card-body">
+                <h5>Sarah Smith</h5>
+                <p>Frontend Developer</p>
+                <a href="#">View Profile</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600" class="card-img-top">
+            <div class="card-body">
+                <h5>Emily Brown</h5>
+                <p>Project Manager</p>
+                <a href="#">View Profile</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-left">
+            <h2>Soft Landing</h2>
+            <p>We help you build modern and responsive websites with ease.</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Feature</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Price</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <h4>Contact</h4>
+            <p>Email: support@softlanding.com</p>
+            <p>Phone: +92 300 0000000</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Soft Landing. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- ================= SCRIPT (Hamburger) ================= -->
+<script>
+const hamburger = document.getElementById("hamburger");
+const navmenu = document.getElementById("navmenu");
+
+hamburger.addEventListener("click", () => {
+    navmenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>
