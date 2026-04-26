@@ -23,11 +23,11 @@
 
         <nav id="navmenu">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Price</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature">Feature</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -39,7 +39,7 @@
 </header>
 
 <!-- ================= HERO ================= -->
-<section class="herosection">
+<section id="home" class="herosection">
     <div class="herocontent">
         <p>professional landing page</p>
         <h1>WE HELP YOU MANAGE YOUR</h1>
@@ -52,7 +52,7 @@
 </section>
 
 <!-- ================= FEATURES ================= -->
-<div class="a2">
+<div id="feature" class="a2">
     <div class="content2">
         <h1>What You Get</h1>
         <span>responsive</span>
@@ -79,35 +79,74 @@
 </div>
 
 <!-- ================= TEAM ================= -->
-<div class="cardcontent">
+<div id="about" class="cardcontent">
     <h1>Professional Team For You</h1>
 
     <div class="cardcontainer">
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=600" class="card-img-top">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600" class="card-img-top">
+            </div>
             <div class="card-body">
                 <h5>John Doe</h5>
                 <p>UI/UX Designer</p>
-                <a href="#">View Profile</a>
+                <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" class="card-img-top">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600" class="card-img-top">
+            </div>
             <div class="card-body">
                 <h5>Sarah Smith</h5>
                 <p>Frontend Developer</p>
-                <a href="#">View Profile</a>
+                <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600" class="card-img-top">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=600" class="card-img-top">
+            </div>
             <div class="card-body">
                 <h5>Emily Brown</h5>
                 <p>Project Manager</p>
-                <a href="#">View Profile</a>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>Michael Chen</h5>
+                <p>Backend Developer</p>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>Jessica Taylor</h5>
+                <p>Marketing Lead</p>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>David Wilson</h5>
+                <p>DevOps Engineer</p>
+                <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
 
@@ -115,7 +154,7 @@
 </div>
 
 <!-- ================= FOOTER ================= -->
-<footer class="footer">
+<footer id="contact" class="footer">
     <div class="footer-container">
 
         <div class="footer-left">
