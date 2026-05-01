@@ -3,197 +3,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soft Landing</title>
+    <title>Soft Landing - Premium</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
 
+<!-- Custom Cursor -->
+<div class="cursor-dot" data-cursor-dot></div>
+<div class="cursor-outline" data-cursor-outline></div>
+
 <!-- ================= NAVBAR ================= -->
 <header>
     <div class="navcontainer">
-
         <div class="logo">
-            <h2>Soft Landing</h2>
+            <h2>Soft<span>Landing</span></h2>
         </div>
 
-        <!-- Hamburger -->
         <div class="hamburger" id="hamburger">
-            ☰
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
         </div>
 
         <nav id="navmenu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#feature">Feature</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#price">Price</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#feature" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">Team</a></li>
+                <li><a href="#price" class="nav-link">Pricing</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
 
         <div class="button">
-            <button>Login / Sign In</button>
+            <button class="btn-primary">Sign In</button>
         </div>
-
     </div>
 </header>
 
 <!-- ================= HERO ================= -->
 <section id="home" class="herosection">
-    <div class="herocontent">
-        <p>professional landing page</p>
+    <div class="hero-blob blob-1"></div>
+    <div class="hero-blob blob-2"></div>
+    
+    <div class="herocontent fade-up">
+        <div class="badge">✨ Next Generation Platform</div>
         <h1>WE HELP YOU MANAGE YOUR</h1>
-        <h1>WEBSITE SUCCESSFULLY</h1>
+        <h1 class="gradient-text">WEBSITE SUCCESSFULLY</h1>
+        <p class="hero-subtitle">Experience the future of digital management with our premium, cutting-edge tools designed for modern creators.</p>
     </div>
 
-    <div class="input">
-        <input type="text" placeholder="Enter your email">
+    <div class="input fade-up">
+        <input type="email" placeholder="Enter your email address">
+        <button class="btn-primary">Get Started</button>
+    </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section id="stats" class="stats-section fade-up">
+    <div class="stat-container">
+        <div class="stat-box">
+            <h2 class="counter" data-target="10000">0</h2>
+            <p>Active Users</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="99">0</h2><span>%</span>
+            <p>Uptime Guaranteed</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="50">0</h2><span>+</span>
+            <p>Premium Tools</p>
+        </div>
+        <div class="stat-box">
+            <h2 class="counter" data-target="24">0</h2><span>/7</span>
+            <p>Expert Support</p>
+        </div>
     </div>
 </section>
 
 <!-- ================= FEATURES ================= -->
-<div id="feature" class="a2">
+<section id="feature" class="a2 fade-up">
     <div class="content2">
-        <h1>What You Get</h1>
-        <span>responsive</span>
-        <span>mobile</span>
-        <span>support</span>
+        <h1 class="section-title">What You Get</h1>
+        <div class="tags">
+            <span class="glass-tag">Responsive</span>
+            <span class="glass-tag">Mobile First</span>
+            <span class="glass-tag">24/7 Support</span>
+        </div>
 
-        <h2>Minimal Design</h2>
-        <p>
-            Minimal design is a style that focuses on simplicity and clarity.<br>
-            It uses limited colors, clean layouts, and only essential elements.<br>
-            The goal is to remove clutter and highlight what truly matters.
-        </p>
+        <div class="feature-block">
+            <h2>Minimal Design</h2>
+            <p>
+                Minimal design is a style that focuses on simplicity and clarity.
+                It uses limited colors, clean layouts, and only essential elements.
+                The goal is to remove clutter and highlight what truly matters.
+            </p>
+        </div>
 
-        <h2>Easy to Use</h2>
-        <strong>
-            It is very simple to use because I made this,<br>
-            that's why I am saying.
-        </strong>
+        <div class="feature-block">
+            <h2>Easy to Use</h2>
+            <p>
+                Intuitive interfaces and logical flows make our platform a breeze to use for beginners and experts alike.
+            </p>
+        </div>
     </div>
 
     <div class="img2">
-        <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=600&auto=format&fit=crop&q=60" alt="">
+        <div class="image-wrapper">
+            <img src="https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&auto=format&fit=crop&q=80" alt="Feature showcase">
+            <div class="glass-overlay"></div>
+        </div>
     </div>
-</div>
+</section>
 
 <!-- ================= TEAM ================= -->
-<div id="about" class="cardcontent">
-    <h1>Professional Team For You</h1>
+<section id="about" class="cardcontent fade-up">
+    <h1 class="section-title text-center">Professional Team</h1>
+    <p class="section-subtitle text-center">Meet the brilliant minds behind our success.</p>
 
     <div class="cardcontainer">
-
-        <div class="card">
+        <!-- Card 1 -->
+        <div class="card glass-card">
             <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600" class="card-img-top">
             </div>
             <div class="card-body">
                 <h5>John Doe</h5>
-                <p>UI/UX Designer</p>
+                <p class="role">UI/UX Designer</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
                 <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
-
-        <div class="card">
+        <!-- Card 2 -->
+        <div class="card glass-card">
             <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=600" class="card-img-top">
             </div>
             <div class="card-body">
                 <h5>Sarah Smith</h5>
-                <p>Frontend Developer</p>
+                <p class="role">Frontend Developer</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
                 <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
-
-        <div class="card">
+        <!-- Card 3 -->
+        <div class="card glass-card">
             <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?w=600" class="card-img-top">
             </div>
             <div class="card-body">
                 <h5>Emily Brown</h5>
-                <p>Project Manager</p>
+                <p class="role">Project Manager</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
                 <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
-
-        <div class="card">
+        <!-- Card 4 -->
+        <div class="card glass-card">
             <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600" class="card-img-top">
             </div>
             <div class="card-body">
                 <h5>Michael Chen</h5>
-                <p>Backend Developer</p>
+                <p class="role">Backend Developer</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
                 <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
-
-        <div class="card">
+        <!-- Card 5 -->
+        <div class="card glass-card">
             <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=600" class="card-img-top">
             </div>
             <div class="card-body">
                 <h5>Jessica Taylor</h5>
-                <p>Marketing Lead</p>
+                <p class="role">Marketing Lead</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
                 <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
-
-        <div class="card">
+        <!-- Card 6 -->
+        <div class="card glass-card">
             <div class="card-img-wrapper">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600" class="card-img-top">
             </div>
             <div class="card-body">
                 <h5>David Wilson</h5>
-                <p>DevOps Engineer</p>
+                <p class="role">DevOps Engineer</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
                 <a href="#" class="card-btn">View Profile</a>
             </div>
         </div>
-
+        <!-- Card 7 -->
+        <div class="card glass-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>Sophia Martinez</h5>
+                <p class="role">Data Scientist</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
+        <!-- Card 8 -->
+        <div class="card glass-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>James Anderson</h5>
+                <p class="role">QA Engineer</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
+        <!-- Card 9 -->
+        <div class="card glass-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>Olivia Garcia</h5>
+                <p class="role">Content Strategist</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
+        <!-- Card 10 -->
+        <div class="card glass-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>William Thompson</h5>
+                <p class="role">Security Analyst</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
+        <!-- Card 11 -->
+        <div class="card glass-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>Isabella Clark</h5>
+                <p class="role">HR Manager</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
+        <!-- Card 12 -->
+        <div class="card glass-card">
+            <div class="card-img-wrapper">
+                <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=600" class="card-img-top">
+            </div>
+            <div class="card-body">
+                <h5>Daniel White</h5>
+                <p class="role">Sales Director</p>
+                <div class="card-socials">
+                    <a href="#">in</a><a href="#">tw</a><a href="#">gh</a>
+                </div>
+                <a href="#" class="card-btn">View Profile</a>
+            </div>
+        </div>
     </div>
-</div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section id="price" class="pricing-section fade-up">
+    <h1 class="section-title text-center">Simple Pricing</h1>
+    <p class="section-subtitle text-center">Choose the perfect plan for your needs.</p>
+
+    <div class="pricing-container">
+        <div class="pricing-card glass-card">
+            <h3>Basic</h3>
+            <div class="price"><span>$</span>9<span>/mo</span></div>
+            <ul>
+                <li>✔ 1 User</li>
+                <li>✔ 5GB Storage</li>
+                <li>✔ Basic Support</li>
+                <li class="disabled">✖ Premium Tools</li>
+            </ul>
+            <button class="btn-outline">Choose Basic</button>
+        </div>
+
+        <div class="pricing-card glass-card popular">
+            <div class="popular-badge">Most Popular</div>
+            <h3>Pro</h3>
+            <div class="price"><span>$</span>29<span>/mo</span></div>
+            <ul>
+                <li>✔ 5 Users</li>
+                <li>✔ 50GB Storage</li>
+                <li>✔ Priority Support</li>
+                <li>✔ Premium Tools</li>
+            </ul>
+            <button class="btn-primary">Choose Pro</button>
+        </div>
+
+        <div class="pricing-card glass-card">
+            <h3>Enterprise</h3>
+            <div class="price"><span>$</span>99<span>/mo</span></div>
+            <ul>
+                <li>✔ Unlimited Users</li>
+                <li>✔ 500GB Storage</li>
+                <li>✔ 24/7 Dedicated Support</li>
+                <li>✔ Custom Analytics</li>
+            </ul>
+            <button class="btn-outline">Choose Enterprise</button>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section id="testimonials" class="testimonials-section fade-up">
+    <h1 class="section-title text-center">What Clients Say</h1>
+    <div class="testimonial-container">
+        <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p>"This platform completely transformed how we manage our digital presence. Absolute game-changer!"</p>
+            <div class="client-info">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100" alt="Client">
+                <div>
+                    <h4>Alice Johnson</h4>
+                    <span>CEO, TechNova</span>
+                </div>
+            </div>
+        </div>
+        <div class="testimonial-card glass-card">
+            <div class="stars">★★★★★</div>
+            <p>"The sleek design and ease of use is unmatched. My team adopted it within days without any training."</p>
+            <div class="client-info">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100" alt="Client">
+                <div>
+                    <h4>Mark Spencer</h4>
+                    <span>Product Manager</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="faq-section fade-up">
+    <h1 class="section-title text-center">Frequently Asked Questions</h1>
+    <div class="faq-container">
+        <div class="faq-item glass-card">
+            <div class="faq-question">
+                <h3>What makes Soft Landing different?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>We combine premium aesthetics with powerful functionality, offering a modern, dark-themed experience that your users will love.</p>
+            </div>
+        </div>
+        <div class="faq-item glass-card">
+            <div class="faq-question">
+                <h3>Can I upgrade my plan later?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Absolutely! You can seamlessly upgrade or downgrade your plan at any time from your account settings.</p>
+            </div>
+        </div>
+        <div class="faq-item glass-card">
+            <div class="faq-question">
+                <h3>Is there a free trial?</h3>
+                <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                <p>Yes, all our paid plans come with a 14-day free trial so you can experience the full power of our platform risk-free.</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- ================= FOOTER ================= -->
 <footer id="contact" class="footer">
     <div class="footer-container">
-
         <div class="footer-left">
-            <h2>Soft Landing</h2>
-            <p>We help you build modern and responsive websites with ease.</p>
+            <h2>Soft<span>Landing</span></h2>
+            <p>Empowering creators to build modern, responsive, and beautiful websites with absolute ease.</p>
         </div>
 
         <div class="footer-links">
             <h4>Quick Links</h4>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Feature</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Price</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#feature">Features</a></li>
+                <li><a href="#about">Team</a></li>
+                <li><a href="#price">Pricing</a></li>
             </ul>
         </div>
 
         <div class="footer-contact">
             <h4>Contact</h4>
-            <p>Email: support@softlanding.com</p>
-            <p>Phone: +92 300 0000000</p>
+            <p>Email: hello@softlanding.io</p>
+            <p>Phone: +1 (555) 000-0000</p>
         </div>
-
     </div>
 
     <div class="footer-bottom">
-        <p>© 2026 Soft Landing. All rights reserved.</p>
+        <p>© 2026 Soft Landing. Crafted with precision.</p>
     </div>
 </footer>
 
-<!-- ================= SCRIPT (Hamburger) ================= -->
-<script>
-const hamburger = document.getElementById("hamburger");
-const navmenu = document.getElementById("navmenu");
-
-hamburger.addEventListener("click", () => {
-    navmenu.classList.toggle("active");
-});
-</script>
-
+<!-- External Scripts -->
+<script src="script.js"></script>
 </body>
 </html>
